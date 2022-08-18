@@ -4,10 +4,23 @@ import "fmt"
 
 func main() {
 	const Tickets_count = 50
-	var Tickets_available = 50
-	var conferenceTickets = " Go_Conference"
+	Tickets_availabe := 45
+	conferenceTickets := "Go_conference"
 
-	fmt.Println("Welcome to our", conferenceTickets, "tickes we are so happy this site is for you")
-	fmt.Println("Overall We had ", Tickets_count, "for the concert, and we have", Tickets_available, "tickets are still available")
-	fmt.Println("Get your tickets for the ", conferenceTickets)
+	fmt.Printf("\nTickets_count is a type of %T, and conferenceTickets is a type of %T\n", Tickets_count, conferenceTickets)
+
+	fmt.Printf("\nWelcome to  our %v we are so happy this site is for you\n", conferenceTickets)
+	fmt.Printf("Overall We have %v tickets are opened for the concert, and we have %v tickets are still available\n", Tickets_count, Tickets_availabe)
+	fmt.Println("\nGet your tickets for the", conferenceTickets)
+
+	var username string
+
+	var user_booked int
+	//username of a user
+
+	username = "mohan"
+	user_booked = 5
+
+	fmt.Printf("\n%v booked %v tickets for the concert. \n", username, user_booked)
+
 }
